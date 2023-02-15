@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+html {
+    font-family: 'Oswald', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    font-size: 50px;
+    background-color: gray;
+    padding: 30px;
+    justify-content: center;    
+    width: 100%;
+    color: white;
+}
+
+.container, span {
+    margin-right: 18px;
+}
+
+.box {
+    width: 15ch;
+    animation: typing 4s steps(19), blink .3s step-end alternate;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 50px;
+    color: black;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50%{
+        border-color: transparent;
+    }
+}
